@@ -485,9 +485,7 @@ def sample_images(
             make_grid(imgs_all, nrow=2+4, padding=10).detach()
         )
         grids.append(grid)
-
-<<<<<<< HEAD
-    return grids
+    return grids, fid
 
 # below is alternative to sample_images that can also handle img2img reference
 @torch.no_grad()
@@ -649,6 +647,3 @@ def reconstruct_from_clip(
         for i in range(num_xaxis_subplots):
             ax[im][i].axis('off')
     return fig
-=======
-    return grids, fid
->>>>>>> origin/main
